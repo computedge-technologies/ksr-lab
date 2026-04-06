@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# NanoCore16 Toolchain Wrapper
+
+# Get the directory where the script is located
+TOOL_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+ASSEMBLER="$TOOL_DIR/assembler.py"
+
+if [ "$#" -lt 1 ]; then
+    echo "Usage: nanocore16_toolchain <input.asm> [output.hex]"
+    exit 1
+fi
+
+python3 "$ASSEMBLER" "$@"

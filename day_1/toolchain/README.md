@@ -1,11 +1,11 @@
 # NanoCore16 Toolchain Documentation
 
-The `sim_proc_toolchain` is a custom assembler designed to convert assembly code for the NanoCore16 ISA into hex files compatible with `$readmemh`.
+The `nanocore16_toolchain` is a custom assembler designed to convert assembly code for the NanoCore16 ISA into hex files compatible with `$readmemh`.
 
 ## Usage
 
 ```bash
-./toolchain/sim_proc_toolchain <input.asm> [output.hex]
+./toolchain/nanocore16_toolchain <input.asm> [output.hex]
 ```
 
 ## Assembly Syntax
